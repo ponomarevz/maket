@@ -1,18 +1,40 @@
-header {
-}
-.header-top {
-	background-color:red;
-}
-.header-bottom {
-	background-color:red;
-}
-footer {
-	background-color: green;
-	min-height:100px;
-}
-.content {
-	background-color: blue;
-	min-height:100px;
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6,  
+pre, form, fieldset, input, textarea, p, blockquote, th, td {  
+  padding: 0; 
+  margin: 0; 
+  } 
+fieldset, img {  
+  border: 0; 
+  } 
+table { 
+  border-collapse: collapse; 
+  border-spacing: 0; 
+  } 
+ol, ul { 
+  list-style: none; 
+  } 
+address, caption, cite, code, dfn, em, strong, th, var { 
+  font-weight: normal; 
+  font-style: normal; 
+  } 
+caption, th { 
+  text-align: left; 
+  } 
+h1, h2, h3, h4, h5, h6 { 
+  font-weight: normal; 
+  font-size: 100%; 
+  } 
+q:before, q:after { 
+  content: ''; 
+  } 
+abbr, acronym {  
+  border: 0; 
+  } 
+
+
+
+a {
+	text-decoration: none;
 }
 .positioner {
 	width: 80%;
@@ -25,8 +47,8 @@ footer {
 	clear: both;
 }
 .column-left {
-background-color: yellow;
-margin-right: 150px;
+	background-color: yellow;
+	margin-right: 150px;
 }
 .column-right {
 	float:right;
@@ -34,3 +56,41 @@ margin-right: 150px;
 	width: 150px;
 }
 
+header {
+}
+
+.header-top, .header-bottom  {
+	background-color:red;
+}
+.header-top .main-baner {
+	background-color: orange;
+	
+	width:95px;
+	height:95px;
+	float:left
+	
+}
+.header-top .main-menu {
+	margin:0;
+	background-color: orange;
+	float:right;
+	margin-top: 45px;
+	
+}
+
+.header-top .main-menu li {
+	display: inline-block;
+	border: 1px solid red;
+	margin: 0 5px;
+}
+
+.content {
+	padding-top:10px;
+	background-color: blue;
+}
+
+
+footer {
+	background-color: green;
+	min-height:100px;
+}
