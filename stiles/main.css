@@ -1,0 +1,36 @@
+header {
+}
+.header-top {
+	background-color:red;
+}
+.header-bottom {
+	background-color:red;
+}
+footer {
+	background-color: green;
+	min-height:100px;
+}
+.content {
+	background-color: blue;
+	min-height:100px;
+}
+.positioner {
+	width: 80%;
+	margin: 0 auto;
+	background-color: pink;
+}
+.positioner:after {
+	content:'';
+	display:table;
+	clear: both;
+}
+.column-left {
+background-color: yellow;
+margin-right: 150px;
+}
+.column-right {
+	float:right;
+	background-color: grey;
+	width: 150px;
+}
+
