@@ -36,15 +36,18 @@ abbr, acronym {
 a {
 	text-decoration: none;
 }
-.positioner {
-	width: 80%;
-	margin: 0 auto;
-	background-color: pink;
+.header-bottom, .header-top, .content, footer {
+	padding: 0 20px;
+	
 }
-.positioner:after {
-	content:'';
-	display:table;
-	clear: both;
+
+
+
+
+	.positioner {
+	border: 1px solid red;
+	margin: 0 auto;
+	max-width:700px;
 }
 .column-left {
 	background-color: yellow;
@@ -56,12 +59,44 @@ a {
 	width: 150px;
 }
 
+@media screen and (max-width: 480px) {
+	.positioner {
+	border: 1px solid red;
+	margin: 0 auto;
+	
+	}
+	.column-left {
+		background-color: yellow;
+		margin-right: 0;
+	}
+	.column-right {
+		width:auto;
+		float:none;
+	}
+}
+
+.positioner:after {
+	content:'';
+	display:table;
+	clear: both;
+}
+
+
 header {
 }
 
-.header-top, .header-bottom  {
+.header-top {
 	background-color:red;
+	height:100px;
+	
+	margin: 0 auto;
+	
 }
+.header-bottom  {
+	margin: 0 auto;
+	background-color: green;
+}
+
 .header-top .main-baner {
 	background-color: orange;
 	
@@ -87,10 +122,14 @@ header {
 .content {
 	padding-top:10px;
 	background-color: blue;
+	margin: 0 auto;
+	min-width:100px;
+
 }
 
 
 footer {
 	background-color: green;
 	min-height:100px;
+	margin: 0 auto;
 }
