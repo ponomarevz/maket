@@ -44,7 +44,7 @@ a {
 
 
 
-	.positioner {
+.positioner {
 	border: 1px solid red;
 	margin: 0 auto;
 	max-width:700px;
@@ -59,21 +59,6 @@ a {
 	width: 150px;
 }
 
-@media screen and (max-width: 480px) {
-	.positioner {
-	border: 1px solid red;
-	margin: 0 auto;
-	
-	}
-	.column-left {
-		background-color: yellow;
-		margin-right: 0;
-	}
-	.column-right {
-		width:auto;
-		float:none;
-	}
-}
 
 .positioner:after {
 	content:'';
@@ -105,13 +90,18 @@ header {
 	float:left
 	
 }
+nav .togle-button {
+	display: none;
+	border: 1px solid green;
+}
+
 .header-top .main-menu {
 	margin:0;
 	background-color: orange;
 	float:right;
 	margin-top: 45px;
-	
 }
+
 
 .header-top .main-menu li {
 	display: inline-block;
@@ -132,4 +122,53 @@ footer {
 	background-color: green;
 	min-height:100px;
 	margin: 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+	.positioner {
+		border: 1px solid red;
+		margin: 0 auto;
+	
+	}
+	.column-left {
+		background-color: yellow;
+		margin-right: 0;
+	}
+	.column-right {
+		width:auto;
+		float:none;
+	}
+	.header-top .main-menu {
+		
+	}
+	
+	
+	nav .togle-button {
+		display: block;
+		float:right;
+		margin-right: 30px;
+	}
+
+	.header-top .main-menu {
+		display:none;
+		float: none;
+	}
+	.active {
+		display:block !important;
+		position:fixed !important;
+		margin:0 !important;
+		
+		top:30px;
+		left:0;
+		width:100%;
+	
+	}
+	.header-top {
+		position:fixed;
+		width: 100%;
+	}
+	.header-top .main-menu li {
+		display: block;
+		
+	}
 }

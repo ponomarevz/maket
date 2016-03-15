@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html ng-app="app">
   <head>
     <meta charset="utf-8">
     <title>Helo</title>
@@ -9,22 +9,32 @@
     <link rel="stylesheet" href="stiles/main.css">
 	
   </head>
-  <body>
+  <body ng-controller="main">
   
 	<header>
 		<div class="header-top">
 			<div class="positioner">
-				<div class="main-baner">BANER</div>
-				<ul class="main-menu">
-					<li><a href="#">Сылка1</a></li>
-					<li><a href="#">Сылка2</a></li>
-					<li><a href="#">Сылка3</a></li>
-				</ul>
+				
+				<nav ad-menu at-At=2 at-Att={{parSc}}>{{parSc}}
+					<div class="main-baner">BANER</div>
+					<div class="togle-button">Меню</div>
+					<ul class="main-menu">
+						<li><a href="#">Сылка1</a></li>
+						<li><a href="#">Сылка2</a></li>
+						<li><a href="#">Сылка3</a></li>
+						<li><a href="#">Сылка4</a></li>
+						<li><a href="#">Сылка1</a></li>
+						<li><a href="#">Сылка2</a></li>
+						<li><a href="#">Сылка3</a></li>
+						<li><a href="#">Сылка4</a></li>
+					</ul>
+					
+				</nav>
 			</div> <!-- end positioner -->
 		</div> <!-- end header-top -->
 		<div class="header-bottom">
 			<div class="positioner">
-				<div class="column-right">
+			<div class="column-right">
 					Правая колонка
 					<ul>
 						<li>qqqq</li>
@@ -36,11 +46,13 @@
 						<li>qqqq</li>|
 					</ul>
 				</div> <!-- end column-right float ный фиксиров -->
-				<div class="column-left">
+			<div class="column-left">
 					Я люблю маленькие сводки, которые предоставляет grunt-time. Я вижу, как много времени заняло выполнение, каждого из наборов задач. Плюс сколько времени занял весь процесс сборки. 
 					В зависимости от ваших потребностей вы также могли бы выполнить grunt dev, grunt devimg, или grunt img.
 					Вы можете также запустить grun
 				</div> <!-- end column-left не флоатный-->
+				
+				
 			</div> <!-- end positioner -->
 		</div> <!-- end header-bottom -->
 	</header>
@@ -66,8 +78,8 @@
 	<footer>
 	</footer>
 	
-	
-
+	<script src="bower_components/angular/angular.js"></script>
+	<script src="app.js"></script>
    
     
 </body>
